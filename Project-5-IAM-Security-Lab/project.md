@@ -54,7 +54,7 @@ The project follows the **Principle of Least Privilege**, ensuring users and ser
 - Search for IAM
 - Open IAM Dashboard
 
-
+<img src="IAM console.png" width="500">
 ---
 
 ## Step 2 - Create IAM Users
@@ -71,6 +71,12 @@ Navigation
 
 ```
 IAM → Users → Create User
+
+<img src="IAM-users.png" width="500">
+<img src="admin-user.png" width="500">
+<img src="developers-user.png" width="500">
+<img src="readonly-user.png" width="500">
+
 
 ---
 
@@ -89,6 +95,8 @@ Navigation
 ```
 IAM → User Groups → Create Group
 
+<img src="IAM-groups.png" width="500">
+
 
 ---
 
@@ -103,7 +111,7 @@ Assigned policies to each group.
 | Developers | AmazonS3FullAccess |
 | ReadOnly | ReadOnlyAccess |
 
-
+<img src="custom-IAM-policy.png" width="500">
 
 ---
 
@@ -115,7 +123,7 @@ Assigned policies to each group.
 | developer-user | Developers |
 | readonly-user | ReadOnly |
 
-
+<img src="IAM-groups.png" width="500">
 
 ---
 
@@ -151,7 +159,7 @@ Policy JSON
 }
 ```
 
-
+<img src="custom-IAM-policy.png" width="500">
 
 ---
 
@@ -182,6 +190,9 @@ Role Name
 ```
 EC2S3ReadOnlyRole
 
+<img src="create-IAM-role.png" width="500">
+
+<img src="create-IAM-role-role.png" width="500">
 
 ---
 
@@ -194,7 +205,8 @@ Navigation
 ```
 IAM → Users → Security Credentials → Assign MFA
 
-
+<img src="MFA.png" width="500">
+<img src="mfaa.png" width="500">
 ---
 
 ## Step 9 - Configure Password Policy
@@ -209,7 +221,7 @@ Settings
 - Require Numbers
 - Require Symbols
 
-
+<img src="password-policy" width="500">
 
 ---
 
