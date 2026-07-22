@@ -54,7 +54,8 @@ The project follows the **Principle of Least Privilege**, ensuring users and ser
 - Search for IAM
 - Open IAM Dashboard
 
-<img src="IAM console.png" width="500">
+<img src="IAM-console.png" width="500">
+
 ---
 
 ## Step 2 - Create IAM Users
@@ -67,14 +68,14 @@ Created three users.
 | developer-user | Developer |
 | readonly-user | Read Only |
 
-Navigation
-
-```
 IAM → Users → Create User
 
 <img src="IAM-users.png" width="500">
+
 <img src="admin-user.png" width="500">
-<img src="developers-user.png" width="500">
+
+<img src="developer-user.png" width="500">
+
 <img src="readonly-user.png" width="500">
 
 
@@ -90,9 +91,6 @@ Created three groups.
 | Developers | Development Access |
 | ReadOnly | Read Only Access |
 
-Navigation
-
-```
 IAM → User Groups → Create Group
 
 <img src="IAM-groups.png" width="500">
@@ -131,11 +129,7 @@ Assigned policies to each group.
 
 Created a custom policy that allows access to only one S3 bucket.
 
-Policy Name
-
-```
-S3LimitedAccessPolicy
-```
+Policy Name - S3LimitedAccessPolicy
 
 Policy JSON
 
@@ -189,6 +183,7 @@ Role Name
 
 ```
 EC2S3ReadOnlyRole
+```
 
 <img src="create-IAM-role.png" width="500">
 
@@ -200,12 +195,10 @@ EC2S3ReadOnlyRole
 
 Enabled Multi-Factor Authentication for IAM users.
 
-Navigation
-
-```
 IAM → Users → Security Credentials → Assign MFA
 
 <img src="MFA.png" width="500">
+
 <img src="mfaa.png" width="500">
 ---
 
@@ -221,7 +214,7 @@ Settings
 - Require Numbers
 - Require Symbols
 
-<img src="password-policy" width="500">
+<img src="password-policy.png" width="500">
 
 ---
 
